@@ -48,6 +48,18 @@ const routes = [
     exact: true,
     Component: lazy(() => import('pages/partner/partner')),
   },
+  {
+    path: '/modules/modules',
+    key: 'MODULES',
+    exact: true,
+    Component: lazy(() => import('pages/modules/modules')),
+  },
+  {
+    path: '/processes/processes',
+    key: 'PROCESSES',
+    exact: true,
+    Component: lazy(() => import('pages/processes/processes')),
+  },
 ];
 
 const Router = ({ history }) => (

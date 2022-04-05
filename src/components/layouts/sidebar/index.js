@@ -33,6 +33,16 @@ const Sidebar = ({
       icon: '/assets/images/logo/sidebarLogo/people.svg',
       key: '/partner/people',
     },
+    {
+      title: 'Modules',
+      icon: '',
+      key: '/modules/modules',
+    },
+    {
+      title: 'Processes',
+      icon: '',
+      key: '/processes/processes',
+    },
   ];
 
   // const settingPath = '/setting';
@@ -60,7 +70,7 @@ const Sidebar = ({
           // main menu
           // permission wise rendering for sub menu
           if (!permission.includes(mainPermission)
-          && mainPermission) return null;
+            && mainPermission) return null;
           return (
             <Item
               icon={<img style={{ paddingBottom: '0.22rem' }} src={icon} alt={icon} />}
